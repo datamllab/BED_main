@@ -5,7 +5,7 @@
 [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html)
 
 <div align=center>
-<img width="600" height="400" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
+<img width="600" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
 </div>
 
 ### Train a tiny model
