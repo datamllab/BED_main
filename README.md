@@ -2,7 +2,11 @@
 
 ### About this project
 
-[MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html)
+This project focus on end-to-end oBject
+detection system for Edge Devices (BED).
+BED integrates a deep nerual network (DNN) practiced on MAX78000 with I/O devices, as illustrated in the following figure. 
+The DNN model for the detection is deployed on [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html); 
+and the I/O devices includes a camera and a screen for image acquisition and output exhibition, respectively. 
 
 <div align=center>
 <img width="600" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
@@ -71,11 +75,12 @@ For detailed demonstration, please go to see our [demo video]().
 
 ### Acknowledgement
 
+TBD.
 
 ### Cite this work
 
 If you find this repo useful, you can cite by:
 
 ````angular2html
-
+TBD.
 ````
