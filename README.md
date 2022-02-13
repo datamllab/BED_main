@@ -17,7 +17,7 @@ and the I/O devices includes a camera and a screen for image acquisition and out
 ### Train a tiny model
 
 Before training the model, it is necessary to clone and install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training).
-Once you finished the installation, copy this repo to the root directory of your local ai8x-training, and use this commend to train a model:
+Once finishing the installation, copy this repo to the root directory of your local ai8x-training, and use this commend to train a model:
 
 ````angular2html
 conda activate ai8x-training
