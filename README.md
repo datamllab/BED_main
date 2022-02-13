@@ -64,7 +64,7 @@ We focus on the case study for the offline evaluation. The detection results for
 
 #### Real-time demonstration
 
-The detection results for the randomly selected images from the [VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html) testing dataset are given as follows:
+BED shows the real-time detection results on the screen of the board. Here, we select several results as follows:
 
 <div align=center>
 <img width="1000" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results_more.png">
