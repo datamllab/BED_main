@@ -1,4 +1,4 @@
-## BED: A Real-Time Object Detection System for Edge Devices
+# BED: A Real-Time Object Detection System for Edge Devices
 <img width="450" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/BED_logo.png">
 
 
