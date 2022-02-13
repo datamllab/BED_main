@@ -4,6 +4,9 @@
 
 [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html)
 
+<div align=center>
+<img width="600" height="400" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
+</div>
 
 ### Train a tiny model
 
@@ -63,7 +66,7 @@ The detection results for the randomly selected images from the [VOC2007](http:/
 <img width="1000" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results_more.png">
 </div>
 
-For real-time demonstration, please go to see our [demo video]().
+For detailed demonstration, please go to see our [demo video]().
 
 
 ### Acknowledgement
