@@ -4,11 +4,11 @@
 
 [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html)
 
-### Prerequirement
-
-Before, it is necessary to install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training).
 
 ### Train a tiny model
+
+Before training the model, it is necessary to clone and install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training).
+Once you finished the installation, you can use this commend to train a model:
 
 ````angular2html
 conda activate ai8x-training
@@ -17,7 +17,7 @@ python train/YOLO_V1_Train_QAT.py
 
 ### Synthesis
 
-Before the synthesis of pretrained model, it is necessary to clone [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) and install the environment in a different branch.
+Before the synthesis of pretrained model, it is necessary to clone and install the environment of [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) in a different branch.
 
 Once you finished the installation, it is required to add the following files to the local directory of ai8x-synthesis: 
 
@@ -56,6 +56,12 @@ We focus on the case study for the offline evaluation. The detection results for
 </div>
 
 #### Real-time demonstration
+
+The detection results for the randomly selected images from the [VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html) testing dataset are given as follows:
+
+<div align=center>
+<img width="600" height="300" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results.png">
+</div>
 
 For real-time demonstration, please go to see our [demo video]().
 
