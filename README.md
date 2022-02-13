@@ -60,7 +60,7 @@ We focus on the case study for the offline evaluation. The detection results for
 The detection results for the randomly selected images from the [VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html) testing dataset are given as follows:
 
 <div align=center>
-<img width="600" height="300" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results.png">
+<img width="600" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results.png">
 </div>
 
 For real-time demonstration, please go to see our [demo video]().
