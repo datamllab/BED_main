@@ -1,0 +1,248 @@
+# CHW (big data) configuration for MNIST
+
+arch: ai85net5
+dataset: yolov1
+
+# Define layer parameters in order of the layer sequence
+layers:
+#self.Conv_224
+- pad: 1
+  activate: ReLU
+  out_offset: 0x2000
+  processors: 0x0000000000000007
+  # FusedConv2dReLU(in_channels=3, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs)
+  data_format: HWC
+  op: conv2d
+  kernel_size: 3x3
+  streaming: true
+
+#self.Conv_112
+- pad: 1
+  activate: ReLU
+  out_offset: 0x3000
+  processors: 0xffffffffffffffff
+  # FusedMaxPoolConv2dReLU(in_channels=64, out_channels=24, kernel_size=3,
+  #                        stride=1, padding=1, bias=bias, **kwargs)
+  op: conv2d
+  kernel_size: 3x3
+  streaming: true
+  max_pool: 2
+  pool_stride: 2
+
+#self.Conv_56
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffff0000000000
+  # FusedMaxPoolConv2dReLU(in_channels=24, out_channels=16, kernel_size=1,
+  #                        stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+  streaming: true
+  max_pool: 2
+  pool_stride: 2
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0x00000000000ffff0
+  # FusedConv2dReLU(in_channels=16, out_channels=32, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+#  streaming: true
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffff00000000
+  # FusedConv2dReLU(in_channels=32, out_channels=32, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+#  streaming: true
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0x00000000ffffffff
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+#  streaming: true
+
+#self.Conv_28
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedMaxPoolConv2dReLU(in_channels=64, out_channels=32, kernel_size=1,
+  #                        stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+  max_pool: 2
+  pool_stride: 2
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffff00000000
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=32, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0x00000000ffffffff
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=32, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffff00000000
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+#self.Conv_14
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedMaxPoolConv2dReLU(in_channels=64, out_channels=32, kernel_size=1,
+  #             stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+  max_pool: 2
+  pool_stride: 2
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0x00000000ffffffff
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=32, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffff00000000
+  # FusedConv2dReLU(in_channels=32, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+  stride: 1
+
+#self.Conv_7
+- pad: 1
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedMaxPoolConv2dReLU(in_channels=64, out_channels=64, kernel_size=3,
+  #                        stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+  max_pool: 2
+  pool_stride: 2
+
+- pad: 1
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=64, kernel_size=3,
+  #                 stride=1, padding=1, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 3x3
+
+#self.Conv_Res
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=64, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x0000
+  processors: 0xffffffffffffffff
+  # FusedConv2dReLU(in_channels=64, out_channels=16, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 0
+  activate: ReLU
+  out_offset: 0x4000
+  processors: 0x000000000000ffff
+  # FusedConv2dReLU(in_channels=16, out_channels=16, kernel_size=1,
+  #                 stride=1, padding=0, bias=bias, **kwargs),
+  op: conv2d
+  kernel_size: 1x1
+
+- pad: 0
+  out_offset: 0x0000
+  processors: 0x000000000000ffff
+  # Conv2d(in_channels=16,
+  #        out_channels=self.B * 5 + self.Classes_Num, kernel_size=1,
+  #        stride=1, padding=0, bias=True, wide=True, **kwargs)
+  op: conv2d
+  kernel_size: 1x1
+  output_width: 32
