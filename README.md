@@ -1,8 +1,8 @@
-# BED: A Real-Time Object Detection System for Edge Devices
+## BED: A Real-Time Object Detection System for Edge Devices
 
 ### Prerequirement
 
-Before, it is necessary to install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training) and [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) in different branch.
+Before, it is necessary to install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training) and [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) in different branches.
 
 ### Train a tiny model
 
@@ -28,6 +28,13 @@ python train/YOLO_V1_Train_QAT.py
 
 ### Evaluation and Demonstration
 
+#### Offline Evaluation
+
+<div align=center>
+<img width="400" height="270" src="https://github.com/datamllab/BED_main/blob/main/figure/offline_results2.png">
+</div>
+
+#### Real-time demonstration
 
 For real-time demonstration, please go to see our demo video.
 
