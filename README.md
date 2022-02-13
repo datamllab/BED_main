@@ -31,7 +31,7 @@ python train/YOLO_V1_Train_QAT.py
 #### Offline Evaluation
 
 <div align=center>
-<img width="1000" height="270" src="https://github.com/datamllab/BED_main/blob/main/figure/offline_results2.png">
+<img width="1000" height="180" src="https://github.com/datamllab/BED_main/blob/main/figure/offline_results2.png">
 </div>
 
 #### Real-time demonstration
