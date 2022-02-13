@@ -4,8 +4,8 @@
 
 This project focus on end-to-end oBject
 detection system for Edge Devices (BED).
-BED integrates a deep nerual network (DNN) practiced on MAX78000 with I/O devices, as illustrated in the following figure. 
-The DNN model for the detection is deployed on [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html); 
+BED integrates a deep nerual network (DNN) practiced on [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html) with I/O devices, as illustrated in the following figure. 
+The DNN model for the detection is deployed on MAX78000; 
 and the I/O devices includes a camera and a screen for image acquisition and output exhibition, respectively. 
 
 <div align=center>
