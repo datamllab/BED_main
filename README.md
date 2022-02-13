@@ -81,7 +81,7 @@ TBD.
 
 ### Cite this work
 
-If you find this repo useful, you can cite this work by:
+If you find this project useful, you can cite this work by:
 
 ````angular2html
 TBD.
