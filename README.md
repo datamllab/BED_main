@@ -77,7 +77,7 @@ For detailed demonstration, please go to see our [demo video]().
 
 ### Acknowledgement
 
-TBD.
+We gratefully acknowledge the technical supports from Maxim Integrated.
 
 ### Cite this work
 
