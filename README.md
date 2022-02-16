@@ -84,7 +84,6 @@ We gratefully acknowledge the technical supports from Maxim Integrated.
 If you find this project useful, you can cite this work by:
 
 ````angular2html
-<<<<<<< HEAD
 @misc{wang2022bed,
       title={BED: A Real-Time Object Detection System for Edge Devices}, 
       author={Guanchu Wang and Zaid Pervaiz Bhat and Zhimeng Jiang and Yi-Wei Chen and Daochen Zha and Alfredo Costilla Reyes and Afshin Niktash and Gorkem Ulkar and Erman Okman and Xia Hu},
@@ -94,7 +93,3 @@ If you find this project useful, you can cite this work by:
       primaryClass={cs.CV}
 }
 ````
-=======
-TBD.
-````
->>>>>>> d12f7190c6c565383e86b1735aad7691f9af0ac2
