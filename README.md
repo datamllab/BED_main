@@ -72,7 +72,7 @@ BED shows the real-time detection results on the screen of the board. Here, we s
 <img width="1000" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/real_results_more.png">
 </div>
 
-For detailed demonstration, please go to see our [demo video]().
+For detailed demonstration, please go to see our [demo video](https://www.youtube.com/watch?v=cFR1IYRFal8).
 
 
 ### Acknowledgement
@@ -84,5 +84,12 @@ We gratefully acknowledge the technical supports from Maxim Integrated.
 If you find this project useful, you can cite this work by:
 
 ````angular2html
-TBD.
+@misc{wang2022bed,
+      title={BED: A Real-Time Object Detection System for Edge Devices}, 
+      author={Guanchu Wang and Zaid Pervaiz Bhat and Zhimeng Jiang and Yi-Wei Chen and Daochen Zha and Alfredo Costilla Reyes and Afshin Niktash and Gorkem Ulkar and Erman Okman and Xia Hu},
+      year={2022},
+      eprint={2202.07503},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ````
