@@ -4,11 +4,11 @@
 
 ### About this project
 
-This project focus on end-to-end oBject
+This project focuses on end-to-end oBject
 detection system for Edge Devices (BED).
 BED integrates a deep nerual network (DNN) practiced on [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html) with I/O devices, as illustrated in the following figure. 
 The DNN model for the detection is deployed on MAX78000; 
-and the I/O devices includes a camera and a screen for image acquisition and output exhibition, respectively. 
+and the I/O devices include a camera and a screen for image acquisition and output exhibition, respectively. 
 
 <div align=center>
 <img width="600" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
@@ -17,7 +17,7 @@ and the I/O devices includes a camera and a screen for image acquisition and out
 ### Train a tiny model
 
 Before training the model, it is necessary to clone and install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training).
-Once finishing the installation, copy this repo to the root directory of your local ai8x-training, and use this commend to train a model:
+Once finishing the installation, copy this repo to the root directory of your local ai8x-training, and use this command to train a model:
 
 ````angular2html
 conda activate ai8x-training
@@ -26,7 +26,7 @@ python train/YOLO_V1_Train_QAT.py
 
 ### Synthesis
 
-Before the synthesis of pretrained model, it is necessary to clone and install the environment of [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) in a different branch.
+Before the synthesis of the pretrained model, it is necessary to clone and install the environment of [ai8x-synthesis](https://github.com/MaximIntegratedAI/ai8x-synthesis) in a different branch.
 
 Once you finished the installation, it is required to add the following files to the local directory of ai8x-synthesis: 
 
@@ -35,13 +35,13 @@ Once you finished the installation, it is required to add the following files to
 * Put [yolo-224-hwc-ai85_MXIM.yaml](https://github.com/datamllab/BED_main/blob/main/synthesis/yolo-224-hwc-ai85_MXIM.yaml) into the directory ./networks/ of ai8x-synthesis.
 * Put [gen-demos-max78000-yolov1.sh](https://github.com/datamllab/BED_main/blob/main/synthesis/gen-demos-max78000-yolov1.sh) into the directory ./ of ai8x-synthesis
 
-With all above steps finished, you can use this commend to quantize the pretrained model: 
+With all the above steps finished, you can use this command to quantize the pretrained model: 
 ````angular2html
 conda activate ai8x-synthesis
 sh ./scripts/quantize_yolov1.sh
 ````
 
-After the quantization, you can use this commend to synthesize the pretrained model: 
+After the quantization, you can use this command to synthesize the pretrained model: 
 ````angular2html
 sh gen-demos-max78000-yolov1.sh
 ````
@@ -84,6 +84,7 @@ We gratefully acknowledge the technical supports from Maxim Integrated.
 If you find this project useful, you can cite this work by:
 
 ````angular2html
+<<<<<<< HEAD
 @misc{wang2022bed,
       title={BED: A Real-Time Object Detection System for Edge Devices}, 
       author={Guanchu Wang and Zaid Pervaiz Bhat and Zhimeng Jiang and Yi-Wei Chen and Daochen Zha and Alfredo Costilla Reyes and Afshin Niktash and Gorkem Ulkar and Erman Okman and Xia Hu},
@@ -93,3 +94,7 @@ If you find this project useful, you can cite this work by:
       primaryClass={cs.CV}
 }
 ````
+=======
+TBD.
+````
+>>>>>>> d12f7190c6c565383e86b1735aad7691f9af0ac2
