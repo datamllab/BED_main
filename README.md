@@ -40,11 +40,15 @@ With all the above steps finished, you can use this command to quantize the pret
 conda activate ai8x-synthesis
 sh ./scripts/quantize_yolov1.sh
 ````
+You can download the pretrained model in [Yolov1_checkpoint.pth.tar](https://drive.google.com/file/d/10BCA0byHfDFE2s4xJOUvejPUUpeKn3Dl/view?usp=sharing).
 
 After the quantization, you can use this command to synthesize the pretrained model: 
 ````angular2html
 sh gen-demos-max78000-yolov1.sh
 ````
+The quantized model is available in [Yolov1_checkpoint-q.pth.tar](https://drive.google.com/file/d/1tEel8Aj_5oA53nRas0ymtq3rMoQyBkhv/view?usp=sharing).
+
+You can also find C codes of the network in [yolov1.tar.gz](https://drive.google.com/file/d/1Yc6HqcvCKhMHxP_wmVcuUgbLqq-bzoQy/view?usp=sharing).
 
 ### Deploy the model to MAX78000 using BED GUI
 
