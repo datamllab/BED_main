@@ -83,6 +83,10 @@ For detailed demonstration, please go to see our [demo video](https://www.youtub
 
 We gratefully acknowledge the technical supports from Maxim Integrated.
 
+
+### Code Contributors
+Guanchu Wang, Zaid Pervaiz Bhat, Zhimeng Jiang, Yi-Wei Chen, Minhao Fan, Ruzhe Wei, Daochen Zha, Alfredo Costilla Reyes
+
 ### Cite this work
 
 If you find this project useful, you can cite this work by:
