@@ -14,6 +14,8 @@ and the I/O devices include a camera and a screen for image acquisition and outp
 <img width="600" height="200" src="https://github.com/datamllab/BED_main/blob/main/figure/sys_config-p.png">
 </div>
 
+This codebase is mainly contributed by Guanchu Wang, Zaid Pervaiz Bhat, Zhimeng Jiang, Yi-Wei Chen, Minhao Fan, Ruzhe Wei, Daochen Zha, and Alfredo Costilla Reyes
+
 ### Train a tiny model
 
 Before training the model, it is necessary to clone and install the envoironment of [ai8x-training](https://github.com/MaximIntegratedAI/ai8x-training).
@@ -78,14 +80,9 @@ BED shows the real-time detection results on the screen of the board. Here, we s
 
 For detailed demonstration, please go to see our [demo video](https://www.youtube.com/watch?v=cFR1IYRFal8).
 
-
 ### Acknowledgement
 
 We gratefully acknowledge the technical supports from Maxim Integrated.
-
-
-### Code Contributors
-Guanchu Wang, Zaid Pervaiz Bhat, Zhimeng Jiang, Yi-Wei Chen, Minhao Fan, Ruzhe Wei, Daochen Zha, Alfredo Costilla Reyes
 
 ### Cite this work
 
